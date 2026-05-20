@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#glcanvas {
+  display: block;
+  margin: auto;
+  background-color: black;
+}
+
+#startOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#startOverlay img {
+  width: 60%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+#playerName {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 200px;
+}
+
+#startBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: limegreen;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+#controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+#controls button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 14px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#scoreDisplay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: white;
+  z-index: 5;
+}
+
+#playerDisplay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: white;
+  z-index: 5;
+}
+
+#message {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: yellow;
+  display: none;
+  z-index: 15;
+  text-align: center;
+}

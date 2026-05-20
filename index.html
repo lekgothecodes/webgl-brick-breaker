@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WebGL Brick Breaker</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="glcanvas" width="800" height="600"></canvas>
+
+  <div id="startOverlay">
+    <img src="instructions.png" alt="Game Instructions">
+
+    <input id="playerName" type="text" placeholder="Enter your name">
+
+    <button id="startBtn" onclick="startGame()">
+      Start Game
+    </button>
+  </div>
+
+  <div id="playerDisplay">
+    Player:
+  </div>
+
+  <div id="scoreDisplay">
+    Score: <span id="score">0</span>
+  </div>
+
+  <div id="controls">
+    <button onclick="movePaddleLeft()">← Left</button>
+
+    <button onclick="movePaddleRight()">→ Right</button>
+
+    <button onclick="pauseResumeGame()">⏯ Pause/Resume</button>
+
+    <button onclick="restartGame()">🔄 Restart</button>
+  </div>
+
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
